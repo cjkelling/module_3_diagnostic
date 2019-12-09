@@ -14,10 +14,8 @@ class Search
     order_characters = []
 
     all_characters.each do |character|
-      if character[:house] == @house
-        if character[:orderOfThePhoenix] == true
-          order_characters << Character.new(character)
-        end
+      if character[:house] == @house && character[:orderOfThePhoenix] == true
+        order_characters << Character.new(character)
       end
     end
     order_characters
