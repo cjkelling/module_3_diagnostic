@@ -1,0 +1,9 @@
+<h1>This house has <%= results.character_count %> members in the Order of the Phoenix.</h1>
+<% results.characters.each do |character| %>
+  <ul class="character">
+    <li class="name">Name: <%= character.name %></li>
+    <li class="role">Role: <%= character.role %></li>
+    <li class="house">House: <%= character.house %></li>
+    <li class="patronus">Patronus: <%= character.partonus %></li>
+  </ul>
+<% end %>
